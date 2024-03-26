@@ -1,0 +1,13 @@
+[package]
+name = "static-gen-rs"
+description = "An Axum extension for including static files and templates into site binary. Great for serverless deployments."
+version = "0.1.0"
+edition = "2021"
+authors = ["Ryan Fong <rfong3488@gmail.com>"]
+
+[dependencies]
+axum = { version = "0.7.4", default-features = false }
+axum-template = { version = "2.2.0", features = ["tera"] }
+mime_guess = "2.0.4"
+rust-embed = "8.3.0"
+tera = "1.19.1"
